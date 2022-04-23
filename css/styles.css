@@ -6,6 +6,8 @@
   --transparent-color: rgba(255, 255, 255, 0.6);
   --footer-color: #2f303a;
   --team-background-color: #f5f4fa;
+  --team-border: #ECECEC;
+
 }
 
 html {
@@ -58,6 +60,10 @@ h3 {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.header {
+  border-bottom: 1px solid var(--team-border);
 }
 
 .menu-nav {
@@ -251,6 +257,14 @@ margin-bottom: 25px;
   line-height: 1.9;
 }
 
+.images-list .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+}
+
 .images-list .item:not(:last-child) {
   
    margin-right: 30px;
@@ -259,12 +273,15 @@ margin-bottom: 25px;
 
 .images-list .text {
   border: 1px solid white;
-  text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.flex {
+.flex-element .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 }
 
 img {
@@ -276,6 +293,8 @@ img {
 .flex-element .text {
   border: 1px solid white;
   padding: 20px 24px 20px 24px;
+
+
 }
 
 .images-list {
@@ -284,8 +303,11 @@ img {
 }
 
 .flex-element {
+  
   margin-right: 30px;
   margin-bottom: 30px;
+
+  border: 1px solid #EEEEEE;
 }
 .flex-element:nth-child(3n) {
   margin-right: 0;
@@ -346,8 +368,7 @@ img {
 }
 
 .button-primary {
-  margin-right: 8px;
-
+ 
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
@@ -453,4 +474,8 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+}
+
+.portfolio {
+  padding-bottom: 94px;
 }
